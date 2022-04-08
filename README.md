@@ -6,7 +6,7 @@ All things STAC
 
 Build all distributed packages with `yarn build`.
 
-Run `yarn start` to start the dev server on `http://localhost:3000`.
+Run `yarn start` to start the dev server on `http://localhost:3003`.
 
 ## Things to know
 
