@@ -1,0 +1,37 @@
+{
+  "name": "@fubo/stac",
+  "description": "All things STAC",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "webpack-cli serve",
+    "build": "lerna run build",
+    "build:app": "webpack --mode production",
+    "test": "jest",
+    "serve": "serve dist -p 3001",
+    "clean": "rm -rf dist"
+  },
+  "workspaces": {
+    "packages": [
+      "src/packages/**/*"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "7.17.8",
+    "@babel/preset-react": "7.16.7",
+    "@babel/preset-typescript": "7.16.7",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "8.2.4",
+    "html-webpack-plugin": "5.5.0",
+    "lerna": "^4.0.0",
+    "serve": "13.0.2",
+    "webpack": "5.70.0",
+    "webpack-cli": "4.9.2",
+    "webpack-dev-server": "4.8.0"
+  },
+  "dependencies": {
+    "@fubo/core": "link:../core",
+    "@fubo/stac__components__stac-counter": "link:src/packages/components/STACCounter",
+    "@fubo/users__components__user-counter": "link:../users/src/packages/components/UserCounter"
+  }
+}
